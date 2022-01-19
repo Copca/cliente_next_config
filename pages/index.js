@@ -1,10 +1,13 @@
-import React from 'react';
+import Layout from '../components/Layout';
+import Card from '../components/Card';
 
 const Home = () => {
 	return (
-		<div>
-			<h1 className='text-red-600'>Inicio</h1>
-		</div>
+		<Layout>
+			<div className='container py-4 mt-8'>
+				<Card />
+			</div>
+		</Layout>
 	);
 };
 
