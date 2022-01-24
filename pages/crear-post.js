@@ -1,18 +1,18 @@
 import RutaPrivada from '../components/RutaPrivada';
 
 import Layout from '../components/Layout';
-import Card from '../components/Card';
+import FormCrearPost from '../components/FormCrearPost';
 
-const Home = () => {
+const CrearPost = () => {
 	return (
 		<Layout>
 			<div className='container py-4 mt-8'>
-				<Card />
+				<FormCrearPost />
 			</div>
 		</Layout>
 	);
 };
 
-Home.Ruta = RutaPrivada;
+CrearPost.Ruta = RutaPrivada;
 
-export default Home;
+export default CrearPost;

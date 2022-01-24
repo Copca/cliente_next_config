@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import RutaPrivada from '../components/RutaPrivada';
+
 import Layout from '../components/Layout';
 import Galeria from '../components/Galeria';
 
@@ -7,7 +9,7 @@ const Perfil = () => {
 	return (
 		<Layout pagina='Perfil'>
 			<div className='container'>
-				<div className='flex justify-between items-center mt-8 max-w-screen-md mx-auto border-b-[1px] border-b-gray-300 mb-8 pb-4 '>
+				<div className='flex justify-between items-center mt-8 max-w-screen-md mx-auto border-b-[1px] border-b-gray-300 mb-8 pb-4'>
 					<div className='relative w-40'>
 						<Image
 							src={
@@ -41,5 +43,7 @@ const Perfil = () => {
 		</Layout>
 	);
 };
+
+Perfil.Ruta = RutaPrivada;
 
 export default Perfil;

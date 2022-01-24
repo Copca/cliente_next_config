@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import Header from './Header';
 
-const Layout = ({ children, pagina, guitarra }) => {
+const Layout = ({ children, pagina }) => {
 	return (
 		<div className='min-h-screen flex flex-col bg-gray-100'>
 			<Head>
@@ -12,7 +12,7 @@ const Layout = ({ children, pagina, guitarra }) => {
 
 			<Header />
 
-			{children}
+			<div className='flex-1 flex'>{children}</div>
 		</div>
 	);
 };
